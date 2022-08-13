@@ -7,7 +7,7 @@ export class InMemoryTaskRepositoryImpl implements TaskRepository {
 
   getAll({ after }: GetTasksRequest): Task[] {
     if (after != null) {
-      return this.tasks.splice(after)
+      return this.tasks.slice(after)
     } else {
       return this.tasks
     }
