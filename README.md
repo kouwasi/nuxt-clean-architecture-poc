@@ -3,7 +3,7 @@ This is a proof of concept of Nuxt.js and Clean Architecture.
 
 Honestly, I'm not familiar about the Clean Architecture.
 
-How to implement it?
+How to implement it?  
 Which layered structures is the best? (e.g. strict layered, relaxed layered)  
 Is it really useful architecture?
 
