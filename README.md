@@ -1,6 +1,14 @@
 # clean-architecture-poc
 This is a proof of concept of Nuxt.js and Clean Architecture.
 
+Honestly, I'm not familiar about the Clean Architecture.
+
+How to implement it?
+Which layered structures is the best? (e.g. strict layered, relaxed layered)  
+Is it really useful architecture?
+
+This PoC aims to confirm to useful of Clean Architecture.
+
 ## Features
 Proof of the `./core` directory is not depends on any frameworks and drivers.
 
