@@ -1,13 +1,7 @@
-export class TasksView {
+export type TasksView = {
   index: number
   name: string
   description: string
-
-  constructor(index: number, name: string, description: string) {
-    this.index = index
-    this.name = name
-    this.description = description
-  }
 }
 
 export class GetTasksState {

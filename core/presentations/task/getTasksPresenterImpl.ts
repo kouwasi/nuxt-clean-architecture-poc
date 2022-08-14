@@ -10,8 +10,6 @@ export class GetTasksPresenterImpl implements GetTasksPresenter {
   }
 
   putAll(result: GetAllTasksResult) {
-    this.state.tasks = result.tasks.map((task, index) => {
-      return new TasksView(index, task.name, task.description)
-    })
+    this.state.tasks = result.tasks.map((task, index): TasksView => ({ index, ...task }))
   }
 }
