@@ -40,7 +40,6 @@ import {GetTasksRequest} from "~/core/useCases/task/getTasksUseCase";
 export default defineComponent({
   setup() {
     const taskController = inject(Keys.TaskController)!!
-    const useCase = inject(Keys.GetTasksUseCase)!!
     const tasksState = inject(Keys.GetTasksState)!!
     const createTaskState = inject(Keys.CreateTaskState)!!
     const initialState = {
@@ -51,7 +50,7 @@ export default defineComponent({
     const filterState = reactive({ after: undefined })
 
     const fetch = () => {
-      useCase.getAll(new GetTasksRequest(filterState.after))
+      taskController.getAll(filterState.after)
     }
 
     const onCreate = () => {
